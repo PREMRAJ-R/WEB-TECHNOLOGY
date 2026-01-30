@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chennai Map Page</title>
+</head>
+<body>
+
+<h2>Chennai City Map</h2>
+
+<!-- Embedded Chennai Map -->
+<iframe 
+    src="https://www.google.com/maps?q=Chennai&output=embed"
+    width="400" height="300">
+</iframe>
+
+<hr>
+
+<h3>Hotspot Image Map</h3>
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/6/6e/Chennai_map.png"
+     usemap="#chennaimap" width="400">
+
+<map name="chennaimap">
+    <area shape="rect" coords="50,50,150,150" href="https://en.wikipedia.org/wiki/T._Nagar" target="_blank">
+    <area shape="rect" coords="200,100,300,200" href="https://en.wikipedia.org/wiki/Marina_Beach" target="_blank">
+</map>
+
+<hr>
+
+<h3>Frame with Link</h3>
+
+<iframe name="infoFrame" width="400" height="200"></iframe><br><br>
+
+<a href="https://en.wikipedia.org/wiki/Chennai" target="infoFrame">
+    Load Chennai Info in Frame
+</a>
+
+</body>
+</html>
